@@ -1,0 +1,250 @@
+:root {
+  --black: #303030;
+
+  --lato: "Lato", Arial, Helvetica, sans-serif;
+  --poppins: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--lato);
+  color: var(--black);
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+i {
+  font-style: italic;
+  display: inline-block;
+}
+
+b {
+  font-weight: bold;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  max-height: 11in;
+  margin: 10px auto;
+  border: 2px solid black;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+
+.col {
+  height: inherit;
+  position: relative;
+}
+
+.col > div {
+  padding: 2em 0;
+}
+
+.col-l > div {
+  display: grid;
+  height: inherit;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
+  text-align: center;
+}
+
+.col-l > div:last-child {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: inherit;
+}
+
+.col-l > div:last-child hr {
+  width: 40%;
+  margin: 0 auto;
+  height: 2px;
+  border: 1px solid var(--black);
+}
+
+.col-l section {
+  align-self: center;
+}
+
+.col h1,
+.col h2 {
+  text-transform: uppercase;
+}
+
+.col-l h2 {
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 14pt;
+  font-family: var(--poppins);
+}
+
+.col-l .credentials h1 {
+  font-weight: 500;
+  font-size: 80pt;
+}
+
+.col-l .credentials h2 {
+  font-weight: 400;
+  font-size: 18pt;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 0.95;
+  font-family: var(--lato);
+}
+
+.col-l section > div {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12pt;
+  font-family: var(--poppins);
+}
+
+.col-r {
+  display: grid;
+  gap: 15px;
+}
+
+.col-r section {
+  margin-right: 1em;
+}
+
+.col-r section h2 {
+  font-weight: 600;
+  font-size: 17pt;
+}
+
+.col-r section ul {
+  list-style-type: none;
+}
+
+.col-r section > ul > li {
+  display: grid;
+  margin: 6px 0;
+}
+
+.col-r .education li {
+  grid-template-columns: 200px auto;
+}
+
+.col-r section .metadata {
+  align-self: center;
+}
+
+.col-r section > ul > li .metadata h3 {
+  font-family: var(--poppins);
+  font-size: 11pt;
+  font-weight: 400;
+}
+
+.col-r section > ul > li .metadata h4 {
+  font-family: var(--poppins);
+  font-size: 8.5pt;
+  font-weight: 400;
+}
+
+.col-r section .details {
+  position: relative;
+  padding-left: 16px;
+}
+
+.col-r .education .education-name span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.col-r section .details::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  border-left: 2px solid var(--black);
+}
+
+.col-r .experience > ul > li,
+.col-r .rewards > ul > li {
+  grid-template-columns: 110px auto;
+}
+
+.col-r .experience .details header,
+.col-r .rewards .details header,
+.col-r .projects .details header {
+  padding-bottom: 4px;
+}
+
+.col-r .experience .details header span,
+.col-r .rewards .details header span,
+.col-r .projects .details header span {
+  font-size: 10pt;
+  font-weight: 400;
+  font-family: var(--poppins);
+}
+
+.col-r .experience .details header span:first-of-type,
+.col-r .rewards .details header span:first-of-type,
+.col-r .projects .details header span:first-of-type {
+  font-size: 11pt;
+  font-weight: 500;
+}
+
+.col-r .experience .details ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-r .experience .details li,
+.col-r .rewards .details li,
+.col-r .projects .details li {
+  font-family: var(--poppins);
+  font-size: 9pt;
+  font-weight: 300;
+  margin: 0;
+}
+
+.col-r .experience .details li:last-of-type:nth-child(odd) {
+  grid-column: 1/-1;
+}
+
+.col-r .projects > ul > li {
+  grid-template-columns: 90px auto;
+}
+
+.col-r .projects .tags {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.col-r .projects .tags h3 {
+  font-size: 9pt;
+  line-height: 12pt;
+}
+
+.col-r .projects .tags h3:last-of-type {
+  font-weight: 200;
+  font-size: 10pt;
+  line-height: 18pt;
+}
+
+.col-r .projects .details header span:last-of-type {
+  font-style: italic;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-transform: uppercase;
+  font-size: 8pt;
+  text-align: right;
+}

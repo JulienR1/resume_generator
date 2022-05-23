@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./print.css" media="print" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./utils.js" defer></script>
+    <script src="./translate.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <aside class="col col-l">
+        <div>
+          <section class="credentials">
+            <h1 t="credentials.initials"></h1>
+            <h2 t="credentials.name"></h2>
+          </section>
+
+          <section class="contact">
+            <h2 t="contact.title"></h2>
+            <div>
+              <span t="contact.phone"></span>
+              <span t="contact.email"></span>
+              <span t="contact.link"></span>
+            </div>
+          </section>
+
+          <section class="languages">
+            <h2 t="language.title"></h2>
+            <div>
+              <span t="language.locales.[]"></span>
+            </div>
+          </section>
+
+          <section class="skills">
+            <h2 t="skills.title"></h2>
+            <div>
+              <span t="skills.list.[]"></span>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <span></span>
+          <hr />
+          <hr />
+          <hr />
+        </div>
+      </aside>
+
+      <aside class="col col-r">
+        <div>
+          <section class="education">
+            <h2 t="education.title"></h2>
+            <ul>
+              <li t="education.list.[]">
+                <div class="metadata">
+                  <h3 t="education.list.[].organization"></h3>
+                  <h4 t="education.list.[].timespan"></h4>
+                </div>
+                <div class="education-name details">
+                  <span t="education.list.[].name"></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="experience">
+            <h2 t="experience.title"></h2>
+            <ul>
+              <li t="experience.jobs.[]">
+                <div class="metadata">
+                  <h3 t="experience.jobs.[].city"></h3>
+                  <h4 t="experience.jobs.[].start"></h4>
+                  <h4 t="experience.jobs.[].end" optional></h4>
+                </div>
+                <div class="details">
+                  <header>
+                    <span t="experience.jobs.[].title"></span>
+                    <span>-</span>
+                    <span t="experience.jobs.[].company"></span>
+                  </header>
+                  <ul>
+                    <li t="experience.jobs.[].description.[]"></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="rewards">
+            <h2 t="rewards.title"></h2>
+            <ul>
+              <li t="rewards.list.[]">
+                <div class="metadata">
+                  <h3 t="rewards.list.[].city"></h3>
+                  <h4 t="rewards.list.[].date"></h4>
+                </div>
+                <div class="details">
+                  <header>
+                    <span t="rewards.list.[].prize"></span>
+                    <span>-</span>
+                    <span t="rewards.list.[].details"></span>
+                  </header>
+                  <ul>
+                    <li t="rewards.list.[].description.[]"></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="projects">
+            <h2 t="projects.title"></h2>
+            <ul>
+              <li t="projects.list.[]">
+                <div class="metadata tags">
+                  <h3 t="projects.list.[].general-info.[]"></h3>
+                </div>
+                <div class="details">
+                  <header>
+                    <span t="projects.list.[].description"></span>
+                    <span>-</span>
+                    <span t="projects.list.[].title"></span>
+                  </header>
+                  <ul>
+                    <li t="projects.list.[].details.[]"></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <footer>
+        <span t="credentials.name"></span>
+        <span id="now"></span>
+      </footer>
+    </main>
+  </body>
+</html>

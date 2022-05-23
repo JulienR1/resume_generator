@@ -1,0 +1,80 @@
+{
+  "credentials": {
+    "initials": "",
+    "name": ""
+  },
+  "contact": {
+    "title": "",
+    "email": "",
+    "phone": "",
+    "link": ""
+  },
+  "language": {
+    "title": "",
+    "locales": [""]
+  },
+  "skills": {
+    "title": "",
+    "list": []
+  },
+  "education": {
+    "title": "",
+    "list": [
+      {
+        "organization": "",
+        "timespan": "",
+        "name": ""
+      }
+    ]
+  },
+  "experience": {
+    "title": "",
+    "jobs": [
+      {
+        "city": "",
+        "start": "",
+        "end": "",
+        "title": "",
+        "company": "",
+        "description": []
+      }
+    ]
+  },
+  "rewards": {
+    "title": "",
+    "list": [
+      {
+        "city": "",
+        "date": "",
+        "prize": "",
+        "details": "",
+        "description": []
+      }
+    ]
+  },
+  "projects": {
+    "title": "",
+    "list": [
+      {
+        "general-info": [""],
+        "description": "",
+        "title": "",
+        "details": []
+      }
+    ]
+  },
+  "months": [
+    "Janvier",
+    "Février",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Août",
+    "Septembre",
+    "Octobre",
+    "Novembre",
+    "Décembre"
+  ]
+}
